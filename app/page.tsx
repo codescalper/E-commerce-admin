@@ -1,11 +1,13 @@
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
+"use client"
+
+import { Modal } from "@/components/ui/modal";
 
 export default function Home() {
   return (
     <>
-    <p>Hello</p>
-    <UserButton afterSignOutUrl="/" />
+    <Modal isOpen={true} onClose={() => {}} title="text" description="Text description">
+      
+    </Modal>
     </>
   );
 }
